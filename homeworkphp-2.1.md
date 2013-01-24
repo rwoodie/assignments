@@ -54,3 +54,27 @@ When you're done editing this file, save it, commit it, and push it to your "ass
 
 }
 ```
+
+`rwoodie/cakephp/lib/Cake/Cache/Engine/CacheEngine.php`
+```/**
+ * Generates a safe key for use with cache engine storage engines.
+ *
+ * @param string $key the key passed over
+ * @return mixed string $key or false
+ */
+    public function key($key) {
+		if (empty($key)) {
+			return false;
+		}
+    //if 
+    //Condition: (empty($key))
+    //Statement: return false
+		$prefix = '';
+		if (!empty($this->_groupPrefix)) {
+			$prefix = vsprintf($this->_groupPrefix, $this->groups());
+		}
+
+		$key = preg_replace('/[\s]+/', '_', strtolower(trim(str_replace(array(DS, '/', '.'), '_', strval($key)))));
+		return $prefix . $key;
+	}
+```
