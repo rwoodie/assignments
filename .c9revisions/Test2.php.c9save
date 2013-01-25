@@ -1,0 +1,5 @@
+{"ts":1358527626948,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"var_dump ((integer) \"00\");"]],"start1":0,"start2":0,"length1":0,"length2":26}]],"length":26}
+{"ts":1358527684370,"patch":[[{"diffs":[[1,"\n"],[0,"var_dump"]],"start1":0,"start2":0,"length1":8,"length2":9}]],"length":27,"saved":false}
+{"ts":1358527686264,"patch":[[{"diffs":[[1,"<"],[0,"\nvar_dum"]],"start1":0,"start2":0,"length1":8,"length2":9}]],"length":28,"saved":false}
+{"ts":1358527689031,"patch":[[{"diffs":[[0,"<"],[1,"?"],[0,"\nvar_dum"]],"start1":0,"start2":0,"length1":9,"length2":10}]],"length":29,"saved":false}
+{"ts":1358527690669,"patch":[[{"diffs":[[0,"<?"],[1,"php"],[0,"\nvar_dum"]],"start1":0,"start2":0,"length1":10,"length2":13}]],"length":32,"saved":false}

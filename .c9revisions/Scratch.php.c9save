@@ -1,0 +1,53 @@
+{"ts":1359124292953,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"<?PHP\nvar_dump('foo' + 'bar');\n?>"]],"start1":0,"start2":0,"length1":0,"length2":33}]],"length":33}
+{"contributors":[],"silentsave":true,"ts":1359124459316,"patch":[[{"diffs":[[0,"');\n"],[-1,"?>"]],"start1":27,"start2":27,"length1":6,"length2":4}]],"length":31,"saved":false}
+{"ts":1359124461484,"patch":[[{"diffs":[[0,"'bar');\n"],[1,"\n"]],"start1":23,"start2":23,"length1":8,"length2":9}]],"length":32,"saved":false}
+{"ts":1359124964874,"patch":[[{"diffs":[[0,"bar');\n\n"],[1,"$"]],"start1":24,"start2":24,"length1":8,"length2":9}]],"length":33,"saved":false}
+{"ts":1359124966710,"patch":[[{"diffs":[[0,"ar');\n\n$"],[1,"a"]],"start1":25,"start2":25,"length1":8,"length2":9}]],"length":34,"saved":false}
+{"ts":1359124968254,"patch":[[{"diffs":[[0,"r');\n\n$a"],[1," = "]],"start1":26,"start2":26,"length1":8,"length2":11}]],"length":37,"saved":false}
+{"ts":1359124970371,"patch":[[{"diffs":[[0,";\n\n$a = "],[1,"1"]],"start1":29,"start2":29,"length1":8,"length2":9}]],"length":38,"saved":false}
+{"ts":1359124972828,"patch":[[{"diffs":[[0,"\n\n$a = 1"],[1,";\n\n"]],"start1":30,"start2":30,"length1":8,"length2":11}]],"length":41,"saved":false}
+{"ts":1359124975082,"patch":[[{"diffs":[[0,"a = 1;\n\n"],[1,"var"]],"start1":33,"start2":33,"length1":8,"length2":11}]],"length":44,"saved":false}
+{"ts":1359124977934,"patch":[[{"diffs":[[0,"$a = 1;\n\nvar"],[1,"_dump"]],"start1":32,"start2":32,"length1":12,"length2":17}]],"length":49,"saved":false}
+{"ts":1359124983023,"patch":[[{"diffs":[[0,"a = 1;\n\nvar_dump"],[1,"()"]],"start1":33,"start2":33,"length1":16,"length2":18}]],"length":51,"saved":false}
+{"ts":1359124984434,"patch":[[{"diffs":[[0,"ar_dump("],[1,"S"],[0,")"]],"start1":42,"start2":42,"length1":9,"length2":10}]],"length":52,"saved":false}
+{"ts":1359124985414,"patch":[[{"diffs":[[0,"ump("],[-1,"S"],[0,")"]],"start1":46,"start2":46,"length1":6,"length2":5}]],"length":51,"saved":false}
+{"ts":1359124988694,"patch":[[{"diffs":[[0,"ar_dump("],[1,"$"],[0,")"]],"start1":42,"start2":42,"length1":9,"length2":10}]],"length":52,"saved":false}
+{"ts":1359124991689,"patch":[[{"diffs":[[0,"r_dump($"],[1,"a"],[0,")"]],"start1":43,"start2":43,"length1":9,"length2":10}]],"length":53,"saved":false}
+{"ts":1359124995015,"patch":[[{"diffs":[[0,"dump($a)"],[1,";"]],"start1":45,"start2":45,"length1":8,"length2":9}]],"length":54,"saved":false}
+{"ts":1359124995880,"patch":[[{"diffs":[[0,"ump($a);"],[1," "]],"start1":46,"start2":46,"length1":8,"length2":9}]],"length":55,"saved":false}
+{"ts":1359124997471,"patch":[[{"diffs":[[0,"mp($a); "],[1,"//"]],"start1":47,"start2":47,"length1":8,"length2":10}]],"length":57,"saved":false}
+{"ts":1359124998940,"patch":[[{"diffs":[[0,"($a); //"],[1,"int()"]],"start1":49,"start2":49,"length1":8,"length2":13}]],"length":62,"saved":false}
+{"ts":1359125000158,"patch":[[{"diffs":[[0,"; //int("],[1,"1"],[0,")"]],"start1":53,"start2":53,"length1":9,"length2":10}]],"length":63,"saved":false}
+{"ts":1359125002328,"patch":[[{"diffs":[[0,"//int(1)"],[1,"\n"]],"start1":55,"start2":55,"length1":8,"length2":9}]],"length":64,"saved":false}
+{"ts":1359125005619,"patch":[[{"diffs":[[0,"/int(1)\n"],[1,"va"]],"start1":56,"start2":56,"length1":8,"length2":10}]],"length":66,"saved":false}
+{"ts":1359125006726,"patch":[[{"diffs":[[0,"nt(1)\nva"],[1,"r_"]],"start1":58,"start2":58,"length1":8,"length2":10}]],"length":68,"saved":false}
+{"ts":1359125007238,"patch":[[{"diffs":[[0,"/int(1)\nvar_"],[1,"d"]],"start1":56,"start2":56,"length1":12,"length2":13}]],"length":69,"saved":false}
+{"ts":1359125008805,"patch":[[{"diffs":[[0,"int(1)\nvar_d"],[1,"ump"]],"start1":57,"start2":57,"length1":12,"length2":15}]],"length":72,"saved":false}
+{"ts":1359125013318,"patch":[[{"diffs":[[0,"/int(1)\nvar_dump"],[1,"()"]],"start1":56,"start2":56,"length1":16,"length2":18}]],"length":74,"saved":false}
+{"ts":1359125016413,"patch":[[{"diffs":[[0,"ar_dump("],[1,"$"],[0,")"]],"start1":65,"start2":65,"length1":9,"length2":10}]],"length":75,"saved":false}
+{"ts":1359125017755,"patch":[[{"diffs":[[0,"r_dump($"],[1,"a"],[0,")"]],"start1":66,"start2":66,"length1":9,"length2":10}]],"length":76,"saved":false}
+{"ts":1359125018526,"patch":[[{"diffs":[[0,"//int(1)\nvar_dump($a"],[1," ="],[0,")"]],"start1":55,"start2":55,"length1":21,"length2":23}]],"length":78,"saved":false}
+{"ts":1359125019491,"patch":[[{"diffs":[[0,"dump($a "],[1,"="],[0,"=)"]],"start1":68,"start2":68,"length1":10,"length2":11}]],"length":79,"saved":false}
+{"ts":1359125021578,"patch":[[{"diffs":[[0,"mp($a =="],[1,"42"],[0,")"]],"start1":70,"start2":70,"length1":9,"length2":11}]],"length":81,"saved":false}
+{"ts":1359125023976,"patch":[[{"diffs":[[0,"$a ==42)"],[1,";"]],"start1":73,"start2":73,"length1":8,"length2":9}]],"length":82,"saved":false}
+{"ts":1359125037374,"patch":[[{"diffs":[[0,"a ==42);"],[1," //"]],"start1":74,"start2":74,"length1":8,"length2":11}]],"length":85,"saved":false}
+{"ts":1359125040361,"patch":[[{"diffs":[[0,"$a ==42); //"],[1,"bool"]],"start1":73,"start2":73,"length1":12,"length2":16}]],"length":89,"saved":false}
+{"ts":1359125042968,"patch":[[{"diffs":[[0,"; //bool"],[1,"(false)"]],"start1":81,"start2":81,"length1":8,"length2":15}]],"length":96,"saved":false}
+{"ts":1359125046578,"patch":[[{"diffs":[[0,"l(false)"],[1,"\n"]],"start1":88,"start2":88,"length1":8,"length2":9}]],"length":97,"saved":false}
+{"ts":1359125058273,"patch":[[{"diffs":[[0,"(false)\n"],[1,"var"]],"start1":89,"start2":89,"length1":8,"length2":11}]],"length":100,"saved":false}
+{"ts":1359125059109,"patch":[[{"diffs":[[0,"l(false)\nvar"],[1,"_d"]],"start1":88,"start2":88,"length1":12,"length2":14}]],"length":102,"saved":false}
+{"ts":1359125060800,"patch":[[{"diffs":[[0,"false)\nvar_d"],[1,"ump"]],"start1":90,"start2":90,"length1":12,"length2":15}]],"length":105,"saved":false}
+{"ts":1359125065938,"patch":[[{"diffs":[[0,"(false)\nvar_dump"],[1,"()"]],"start1":89,"start2":89,"length1":16,"length2":18}]],"length":107,"saved":false}
+{"ts":1359125067439,"patch":[[{"diffs":[[0,"ar_dump("],[1,"$"],[0,")"]],"start1":98,"start2":98,"length1":9,"length2":10}]],"length":108,"saved":false}
+{"ts":1359125069234,"patch":[[{"diffs":[[0,"r_dump($"],[1,"a"],[0,")"]],"start1":99,"start2":99,"length1":9,"length2":10}]],"length":109,"saved":false}
+{"ts":1359125073505,"patch":[[{"diffs":[[0,"l(false)\nvar_dump($a"],[1," "],[0,")"]],"start1":88,"start2":88,"length1":21,"length2":22}]],"length":110,"saved":false}
+{"ts":1359125076110,"patch":[[{"diffs":[[0,"_dump($a"],[1," =="],[0," )"]],"start1":100,"start2":100,"length1":10,"length2":13}]],"length":113,"saved":false}
+{"ts":1359125077972,"patch":[[{"diffs":[[0,"p($a == "],[1,"true"],[0,")"]],"start1":104,"start2":104,"length1":9,"length2":13}]],"length":117,"saved":false}
+{"ts":1359125082208,"patch":[[{"diffs":[[0,"== true)"],[1,"; "]],"start1":109,"start2":109,"length1":8,"length2":10}]],"length":119,"saved":false}
+{"ts":1359125084632,"patch":[[{"diffs":[[0," true); "],[1,"//b"]],"start1":111,"start2":111,"length1":8,"length2":11}]],"length":122,"saved":false}
+{"ts":1359125085962,"patch":[[{"diffs":[[0,"= true); //b"],[1,"ool"]],"start1":110,"start2":110,"length1":12,"length2":15}]],"length":125,"saved":false}
+{"ts":1359125088562,"patch":[[{"diffs":[[0,"== true); //bool"],[1,"(true)"]],"start1":109,"start2":109,"length1":16,"length2":22}]],"length":131,"saved":false}
+{"ts":1359125093305,"patch":[[{"diffs":[[0,"mp($a =="],[1," "],[0,"42); //b"]],"start1":70,"start2":70,"length1":16,"length2":17}]],"length":132,"saved":false}
+{"ts":1359125122312,"patch":[[{"diffs":[[0,"//bool(true)"],[1,"\n"]],"start1":120,"start2":120,"length1":12,"length2":13}]],"length":133,"saved":false}
+{"ts":1359128266948,"patch":[[{"diffs":[[-1,"<?PHP\nvar_dump('foo' + 'bar');\n\n$a = 1;\n\nvar_dump($a); //int(1)\nvar_dump($a == 42); //bool(false)\nvar_dump($a == true); //bool(true)"],[0,"\n"]],"start1":0,"start2":0,"length1":133,"length2":1}]],"length":1,"saved":false}
+{"ts":1359128280306,"patch":[[{"diffs":[[1,"<?php\n\n$a = 1;\n\n// Comment on my code...\n/**\n * Whatever I want to write goes here.\n * \n * And if I put line breaks, C9 helps me out.\n */\n{\n    var_dump($a); // int(1)\n    var_dump($a == 42); // bool(false)\n    var_dump($a == true); // bool(true)\n    var_dump($a === true); // bool(false)\n}\n\nvar_dump($a = 2 - 3); // int(-1)\nvar_dump($a = $a + 1); // int(0)\nvar_dump($a); // int(0)\n\nvar_dump($a = $a - 1); // int(-1)\nvar_dump($a -= 7); // int(-8)\nvar_dump($a++); // int(-8)\nvar_dump($a); // int(-7)\nvar_dump(--$a); // int(-8)\nvar_dump($a); // int(-8)\n\nif ( !$connection = mysql_connect(. . .) ) die(mysql_error());"],[0,"\n"]],"start1":0,"start2":0,"length1":1,"length2":615}]],"length":615,"saved":false}

@@ -1,0 +1,118 @@
+{"ts":1358530449460,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"# Homework 2.1 - Ever wonder what all these signs say?\n\nFor Homework 1.1, you found a nice project on Github, forked it into your own account, and cloned it into your Cloud 9 IDE account. For this assignment, pick one or more PHP files from your project (you DID pick a PHP project, didn't you?) and identify some of the following items of PHP grammar and vocabulary that we talked about in class, including but not limited to:\n\n* Variables: `$name`\n* Constants: `E_USER_WARNING`, `MY_AWESOME_CONSTANT`\n* Arithmetic operators: addition (+), subtraction (-)\n* Functions: `array_slice()`, `do_something_amazing()`\n\nWhen you find one, identify the file and line number in this file, below the instrcutions per the example below. Try to make the indentation match the original file (yes, copy and paste), even if that means there's NO indentation. Crazy PHPers.\n\nYou don't have to identify EVERYTHING in a given line or even in a single file, but you may get extra points if you're thorough or make a survey of more than one file... And you might get docked if you make too much work for me. I at least want to see about 50 lines of code.\n\nWhen you're done editing this file, save it, commit it, and push it to your \"assignments\" repo, called \"origin\". You remember how to push, right?\n\n## Your work should look like this...\n\n`path/to/file.php:3`\n```php\n    if ( MY_AWESOME_CONSTANT )\n    // Constant: MY_AWESOME_CONSTANT\n```\n\n`path/to/file.php:42`\n```php\n    $name = do_something_amazing() + 1;\n    // Variable: $name\n    // Function: do_something_amazing()\n    // Literal: 1 (integer)\n```\n\n## Now get to it!\n\n"]],"start1":0,"start2":0,"length1":0,"length2":1607}]],"length":1607}
+{"contributors":[],"silentsave":true,"ts":1358913103516,"patch":[[{"diffs":[[0,"to it!\n\n"],[1,"\n"]],"start1":1599,"start2":1599,"length1":8,"length2":9}]],"length":1608,"saved":false}
+{"ts":1358913106091,"patch":[[{"diffs":[[0,"to it!\n\n"],[1,"`"],[0,"\n"]],"start1":1599,"start2":1599,"length1":9,"length2":10}]],"length":1609,"saved":false}
+{"ts":1358913118960,"patch":[[{"diffs":[[0,"o it!\n\n`"],[1,"rwoodie/cakephp"],[0,"\n"]],"start1":1600,"start2":1600,"length1":9,"length2":24}]],"length":1624,"saved":false}
+{"ts":1358913122811,"patch":[[{"diffs":[[0,"/cakephp"],[1,"/"],[0,"\n"]],"start1":1615,"start2":1615,"length1":9,"length2":10}]],"length":1625,"saved":false}
+{"ts":1358913154390,"patch":[[{"diffs":[[0,"cakephp/"],[1,"app/"],[0,"\n"]],"start1":1616,"start2":1616,"length1":9,"length2":13}]],"length":1629,"saved":false}
+{"ts":1358913165057,"patch":[[{"diffs":[[0,"php/app/"],[1,"Schema"],[0,"\n"]],"start1":1620,"start2":1620,"length1":9,"length2":15}]],"length":1635,"saved":false}
+{"ts":1358913179287,"patch":[[{"diffs":[[0,"p/Schema"],[1,"/sessions.php"],[0,"\n"]],"start1":1626,"start2":1626,"length1":9,"length2":22}]],"length":1648,"saved":false}
+{"ts":1358913181614,"patch":[[{"diffs":[[0,"ions.php"],[1,"`"],[0,"\n"]],"start1":1639,"start2":1639,"length1":9,"length2":10}]],"length":1649,"saved":false}
+{"ts":1358913193439,"patch":[[{"diffs":[[0,"ns.php`\n"],[1,"\n"]],"start1":1641,"start2":1641,"length1":8,"length2":9}]],"length":1650,"saved":false}
+{"ts":1358913195263,"patch":[[{"diffs":[[0,"ns.php`\n"],[1,"```"],[0,"\n"]],"start1":1641,"start2":1641,"length1":9,"length2":12}]],"length":1653,"saved":false}
+{"ts":1358913247867,"patch":[[{"diffs":[[0,"ons.php`\n```"],[1,"class SessionsSchema extends CakeSchema {\n\n    public $name = 'Sessions';\n\n\tpublic function before($event = array()) {\n\t\treturn true;\n\t}\n\n\tpublic function after($event = array()) {\n\t}\n\n\tpublic $cake_sessions = array(\n\t\t'id' => array('type' => 'string', 'null' => false, 'key' => 'primary'),\n\t\t'data' => array('type' => 'text', 'null' => true, 'default' => null),\n\t\t'expires' => array('type' => 'integer', 'null' => true, 'default' => null),\n\t\t'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1))\n\t);\n\n}"],[0,"\n"]],"start1":1640,"start2":1640,"length1":13,"length2":534}]],"length":2174,"saved":false}
+{"ts":1358913250707,"patch":[[{"diffs":[[0,"\n\t);\n\n}\n"],[1,"\n"]],"start1":2166,"start2":2166,"length1":8,"length2":9}]],"length":2175,"saved":false}
+{"ts":1358913258077,"patch":[[{"diffs":[[0,"\n\t);\n\n}\n"],[1,"```"],[0,"\n"]],"start1":2166,"start2":2166,"length1":9,"length2":12}]],"length":2178,"saved":false}
+{"ts":1358913301723,"patch":[[{"diffs":[[0,"ssions';"],[1,"\n    "],[0,"\n\n\tpubli"]],"start1":1717,"start2":1717,"length1":16,"length2":21}]],"length":2183,"saved":false}
+{"ts":1358913303802,"patch":[[{"diffs":[[0,"s';\n    "],[1,"//"],[0,"\n\n\tpubli"]],"start1":1722,"start2":1722,"length1":16,"length2":18}]],"length":2185,"saved":false}
+{"ts":1358913314539,"patch":[[{"diffs":[[0,";\n    //"],[1," "],[0,"\n\n\tpubli"]],"start1":1724,"start2":1724,"length1":16,"length2":17}]],"length":2186,"saved":false}
+{"ts":1358913316478,"patch":[[{"diffs":[[0,"\n    // "],[1,"Variabl"],[0,"\n\n\tpubli"]],"start1":1725,"start2":1725,"length1":16,"length2":23}]],"length":2193,"saved":false}
+{"ts":1358913318400,"patch":[[{"diffs":[[0," Variabl"],[1,"e"],[0,"\n\n\tpubli"]],"start1":1732,"start2":1732,"length1":16,"length2":17}]],"length":2194,"saved":false}
+{"ts":1358913319974,"patch":[[{"diffs":[[0,"Variable"],[1,": "],[0,"\n\n\tpubli"]],"start1":1733,"start2":1733,"length1":16,"length2":18}]],"length":2196,"saved":false}
+{"ts":1358913323786,"patch":[[{"diffs":[[0,"riable: "],[1,"public "],[0,"\n\n\tpubli"]],"start1":1735,"start2":1735,"length1":16,"length2":23}]],"length":2203,"saved":false}
+{"ts":1358913327847,"patch":[[{"diffs":[[0," public "],[1,"$name"],[0,"\n\n\tpubli"]],"start1":1742,"start2":1742,"length1":16,"length2":21}]],"length":2208,"saved":false}
+{"ts":1358913333390,"patch":[[{"diffs":[[0,"ic $name"],[1,"\n    "],[0,"\n\n\tpubli"]],"start1":1747,"start2":1747,"length1":16,"length2":21}]],"length":2213,"saved":false}
+{"ts":1358913335274,"patch":[[{"diffs":[[0,"ame\n    "],[1,"//"],[0,"\n\n\tpubli"]],"start1":1752,"start2":1752,"length1":16,"length2":18}]],"length":2215,"saved":false}
+{"ts":1358913336370,"patch":[[{"diffs":[[0,"e\n    //"],[1," F"],[0,"\n\n\tpubli"]],"start1":1754,"start2":1754,"length1":16,"length2":18}]],"length":2217,"saved":false}
+{"ts":1358913338331,"patch":[[{"diffs":[[0,"    // F"],[1,"unc"],[0,"\n\n\tpubli"]],"start1":1756,"start2":1756,"length1":16,"length2":19}]],"length":2220,"saved":false}
+{"ts":1358913339843,"patch":[[{"diffs":[[0," // Func"],[1,"tion"],[0,"\n\n\tpubli"]],"start1":1759,"start2":1759,"length1":16,"length2":20}]],"length":2224,"saved":false}
+{"ts":1358913342212,"patch":[[{"diffs":[[0,"Function"],[1,": "],[0,"\n\n\tpubli"]],"start1":1763,"start2":1763,"length1":16,"length2":18}]],"length":2226,"saved":false}
+{"ts":1358913670503,"patch":[[{"diffs":[[0,"nction: "],[1,"\""],[0,"\n\n\tpubli"]],"start1":1765,"start2":1765,"length1":16,"length2":17}]],"length":2227,"saved":false}
+{"ts":1358913672349,"patch":[[{"diffs":[[0,"nction: "],[-1,"\""],[1,"'S"],[0,"\n\n\tpubli"]],"start1":1765,"start2":1765,"length1":17,"length2":18}]],"length":2228,"saved":false}
+{"ts":1358913673474,"patch":[[{"diffs":[[0,"tion: 'S"],[1,"ess"],[0,"\n\n\tpubli"]],"start1":1767,"start2":1767,"length1":16,"length2":19}]],"length":2231,"saved":false}
+{"ts":1358913676181,"patch":[[{"diffs":[[0,"n: 'Sess"],[1,"ions"],[0,"\n\n\tpubli"]],"start1":1770,"start2":1770,"length1":16,"length2":20}]],"length":2235,"saved":false}
+{"ts":1358913677235,"patch":[[{"diffs":[[0,"Sessions"],[1,"'"],[0,"\n\n\tpubli"]],"start1":1774,"start2":1774,"length1":16,"length2":17}]],"length":2236,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1359003743012,"patch":[[{"diffs":[[0,"\n\t);\n\n}\n```\n"],[1,"\n\n"]],"start1":2224,"start2":2224,"length1":12,"length2":14}]],"length":2238,"saved":false}
+{"ts":1359003744135,"patch":[[{"diffs":[[0,"\n}\n```\n\n"],[1,"`rwoodie/cakephp/app/Schema/sessions.php`"],[0,"\n"]],"start1":2229,"start2":2229,"length1":9,"length2":50}]],"length":2279,"saved":false}
+{"ts":1359003777657,"patch":[[{"diffs":[[0,"rwoodie/cakephp/"],[-1,"app"],[1,"lib"],[0,"/Schema/sessions"]],"start1":2238,"start2":2238,"length1":35,"length2":35}]],"length":2279,"saved":false}
+{"ts":1359003819678,"patch":[[{"diffs":[[0,"php/lib/"],[-1,"Schema"],[1,"cake"],[0,"/session"]],"start1":2250,"start2":2250,"length1":22,"length2":20}]],"length":2277,"saved":false}
+{"ts":1359003823039,"patch":[[{"diffs":[[0,"ib/cake/"],[1,"/"],[0,"sessions"]],"start1":2255,"start2":2255,"length1":16,"length2":17}]],"length":2278,"saved":false}
+{"ts":1359003833930,"patch":[[{"diffs":[[0,"php/lib/"],[-1,"c"],[1,"C"],[0,"ake//ses"]],"start1":2250,"start2":2250,"length1":17,"length2":17}]],"length":2278,"saved":false}
+{"ts":1359003854468,"patch":[[{"diffs":[[0,"ib/Cake/"],[1,"Cache"],[0,"/session"]],"start1":2255,"start2":2255,"length1":16,"length2":21}]],"length":2283,"saved":false}
+{"ts":1359003858300,"patch":[[{"diffs":[[0,"e/Cache/"],[1,"/"],[0,"sessions"]],"start1":2261,"start2":2261,"length1":16,"length2":17}]],"length":2284,"saved":false}
+{"ts":1359003891214,"patch":[[{"diffs":[[0,"e/Cache/"],[1,"Engine"],[0,"/session"]],"start1":2261,"start2":2261,"length1":16,"length2":22}]],"length":2290,"saved":false}
+{"ts":1359003906159,"patch":[[{"diffs":[[0,"/Engine/"],[-1,"s"],[1,"Ca"],[0,"essions."]],"start1":2268,"start2":2268,"length1":17,"length2":18}]],"length":2291,"saved":false}
+{"ts":1359003907390,"patch":[[{"diffs":[[0,"ngine/Ca"],[1,"c"],[0,"essions."]],"start1":2270,"start2":2270,"length1":16,"length2":17}]],"length":2292,"saved":false}
+{"ts":1359003908608,"patch":[[{"diffs":[[0,"gine/Cac"],[1,"he"],[0,"essions."]],"start1":2271,"start2":2271,"length1":16,"length2":18}]],"length":2294,"saved":false}
+{"ts":1359003911743,"patch":[[{"diffs":[[0,"ne/Cache"],[1,"Engine"],[0,"essions."]],"start1":2273,"start2":2273,"length1":16,"length2":22}]],"length":2300,"saved":false}
+{"ts":1359003915098,"patch":[[{"diffs":[[0,"heEngine"],[-1,"essions"],[0,".php`\n"]],"start1":2279,"start2":2279,"length1":21,"length2":14}]],"length":2293,"saved":false}
+{"ts":1359003919583,"patch":[[{"diffs":[[0,"Engine.php`\n"],[1,"\n"]],"start1":2281,"start2":2281,"length1":12,"length2":13}]],"length":2294,"saved":false}
+{"ts":1359003921697,"patch":[[{"diffs":[[0,"ne.php`\n"],[1,"```"],[0,"\n"]],"start1":2285,"start2":2285,"length1":9,"length2":12}]],"length":2297,"saved":false}
+{"ts":1359003954448,"patch":[[{"diffs":[[0,"ine.php`\n```"],[1,"/**\n * Generates a safe key for use with cache engine storage engines.\n *\n * @param string $key the key passed over\n * @return mixed string $key or false\n */\n    public function key($key) {\n\t\tif (empty($key)) {\n\t\t\treturn false;\n\t\t}\n\n\t\t$prefix = '';\n\t\tif (!empty($this->_groupPrefix)) {\n\t\t\t$prefix = vsprintf($this->_groupPrefix, $this->groups());\n\t\t}\n\n\t\t$key = preg_replace('/[\\s]+/', '_', strtolower(trim(str_replace(array(DS, '/', '.'), '_', strval($key)))));\n\t\treturn $prefix . $key;\n\t}"],[0,"\n"]],"start1":2284,"start2":2284,"length1":13,"length2":502}]],"length":2786,"saved":false}
+{"ts":1359003961371,"patch":[[{"diffs":[[0," . $key;\n\t}\n"],[1,"    \n"]],"start1":2774,"start2":2774,"length1":12,"length2":17}]],"length":2791,"saved":false}
+{"ts":1359003963120,"patch":[[{"diffs":[[0,"key;\n\t}\n"],[-1,"    "],[0,"\n"]],"start1":2778,"start2":2778,"length1":13,"length2":9}]],"length":2787,"saved":false}
+{"ts":1359003966277,"patch":[[{"diffs":[[0," . $key;\n\t}\n"],[1,"```"],[0,"\n"]],"start1":2774,"start2":2774,"length1":13,"length2":16}]],"length":2790,"saved":false}
+{"ts":1359004058172,"patch":[[{"diffs":[[0," false;\n\t\t}\n"],[1,"    "],[0,"\n\t\t$prefix ="]],"start1":2516,"start2":2516,"length1":24,"length2":28}]],"length":2794,"saved":false}
+{"ts":1359004060528,"patch":[[{"diffs":[[0,"\t\t}\n    "],[1,"//"],[0,"\n\t\t$pref"]],"start1":2524,"start2":2524,"length1":16,"length2":18}]],"length":2796,"saved":false}
+{"ts":1359004063897,"patch":[[{"diffs":[[0,"}\n    //"],[1," "],[0,"\n\t\t$pref"]],"start1":2526,"start2":2526,"length1":16,"length2":17}]],"length":2797,"saved":false}
+{"ts":1359004129297,"patch":[[{"diffs":[[0,"}\n    //"],[-1," "],[0,"\n\t\t$pref"]],"start1":2526,"start2":2526,"length1":17,"length2":16}]],"length":2796,"saved":false}
+{"ts":1359004131975,"patch":[[{"diffs":[[0,"}\n    //"],[1,"i"],[0,"\n\t\t$pref"]],"start1":2526,"start2":2526,"length1":16,"length2":17}]],"length":2797,"saved":false}
+{"ts":1359004132973,"patch":[[{"diffs":[[0,"\n    //i"],[1,"f"],[0,"\n\t\t$pref"]],"start1":2527,"start2":2527,"length1":16,"length2":17}]],"length":2798,"saved":false}
+{"ts":1359004148554,"patch":[[{"diffs":[[0,"    //if"],[1,": "],[0,"\n\t\t$pref"]],"start1":2528,"start2":2528,"length1":16,"length2":18}]],"length":2800,"saved":false}
+{"ts":1359004156522,"patch":[[{"diffs":[[0,"  //if: "],[1,"Conditi"],[0,"\n\t\t$pref"]],"start1":2530,"start2":2530,"length1":16,"length2":23}]],"length":2807,"saved":false}
+{"ts":1359004163138,"patch":[[{"diffs":[[0," Conditi"],[1,"on i"],[0,"\n\t\t$pref"]],"start1":2537,"start2":2537,"length1":16,"length2":20}]],"length":2811,"saved":false}
+{"ts":1359004228867,"patch":[[{"diffs":[[0,"    //if"],[-1,":"],[0," "],[1,"\n    //"],[0,"Conditio"]],"start1":2528,"start2":2528,"length1":18,"length2":24},{"diffs":[[0,"ondition"],[1,": (empty($key))\n    //Statement:"],[0," "],[-1,"i"],[0,"\n\t\t$pref"]],"start1":2545,"start2":2545,"length1":18,"length2":49}]],"length":2848,"saved":false}
+{"ts":1359004235121,"patch":[[{"diffs":[[0,"tement: "],[1,"return false"],[0,"\n\t\t$pref"]],"start1":2578,"start2":2578,"length1":16,"length2":28}]],"length":2860,"saved":false}
+{"contributors":[],"silentsave":true,"ts":1359090653022,"patch":[[{"diffs":[[0,"key;\n\t}\n```\n"],[1,"\n\n"]],"start1":2848,"start2":2848,"length1":12,"length2":14}]],"length":2862,"saved":false}
+{"ts":1359090653969,"patch":[[{"diffs":[[0,"\t}\n```\n\n"],[1,"`rwoodie/cakephp/lib/Cake/Cache/Engine/CacheEngine.php`"],[0,"\n"]],"start1":2853,"start2":2853,"length1":9,"length2":64}]],"length":2917,"saved":false}
+{"ts":1359090679744,"patch":[[{"diffs":[[0,"ie/cakephp/lib/C"],[-1,"ake"],[1,"onf"],[0,"/Cache/Engine/Ca"]],"start1":2867,"start2":2867,"length1":35,"length2":35}]],"length":2917,"saved":false}
+{"ts":1359090681066,"patch":[[{"diffs":[[0,"lib/Conf"],[1,"ig"],[0,"/Cache/E"]],"start1":2878,"start2":2878,"length1":16,"length2":18}]],"length":2919,"saved":false}
+{"ts":1359092087128,"patch":[[{"diffs":[[0,"/Config/"],[1,"uni"],[0,"Cache/En"]],"start1":2881,"start2":2881,"length1":16,"length2":19}]],"length":2922,"saved":false}
+{"ts":1359092090751,"patch":[[{"diffs":[[0,"nfig/uni"],[1,"code"],[0,"Cache/En"]],"start1":2884,"start2":2884,"length1":16,"length2":20}]],"length":2926,"saved":false}
+{"ts":1359092092524,"patch":[[{"diffs":[[0,"/unicode"],[-1,"Cache"],[0,"/Engine/"]],"start1":2888,"start2":2888,"length1":21,"length2":16}]],"length":2921,"saved":false}
+{"ts":1359092109793,"patch":[[{"diffs":[[0,"unicode/"],[-1,"Engine"],[1,"casefolding"],[0,"/CacheEn"]],"start1":2889,"start2":2889,"length1":22,"length2":27}]],"length":2926,"saved":false}
+{"ts":1359092141240,"patch":[[{"diffs":[[0,"folding/"],[-1,"CacheEngine"],[1,"routes"],[0,".php`\n"]],"start1":2901,"start2":2901,"length1":25,"length2":20}]],"length":2921,"saved":false}
+{"ts":1359092145927,"patch":[[{"diffs":[[0,"routes.php`\n"],[1,"\n"]],"start1":2909,"start2":2909,"length1":12,"length2":13}]],"length":2922,"saved":false}
+{"ts":1359092230270,"patch":[[{"diffs":[[0,"es.php`\n"],[1,"```"],[0,"\n"]],"start1":2913,"start2":2913,"length1":9,"length2":12}]],"length":2925,"saved":false}
+{"ts":1359092284472,"patch":[[{"diffs":[[0,"tes.php`\n```"],[1,"foreach ($prefixes as $prefix) {\n    $params = array('prefix' => $prefix, $prefix => true);\n\t$indexParams = $params + array('action' => 'index');\n\tRouter::connect(\"/{$prefix}/:controller\", $indexParams);\n\tRouter::connect(\"/{$prefix}/:controller/:action/*\", $params);\n}\nRouter::connect('/:controller', array('action' => 'index'));\nRouter::connect('/:controller/:action/*');\n\n$namedConfig = Router::namedConfig();\nif ($namedConfig['rules'] === false) {\n\tRouter::connectNamed(true);\n}"],[0,"\n"]],"start1":2912,"start2":2912,"length1":13,"length2":494}]],"length":3406,"saved":false}
+{"ts":1359092288247,"patch":[[{"diffs":[[0,"ed(true);\n}\n"],[1,"\n"]],"start1":3394,"start2":3394,"length1":12,"length2":13}]],"length":3407,"saved":false}
+{"ts":1359092289584,"patch":[[{"diffs":[[0,"rue);\n}\n"],[1,"```"],[0,"\n"]],"start1":3398,"start2":3398,"length1":9,"length2":12}]],"length":3410,"saved":false}
+{"ts":1359092301712,"patch":[[{"diffs":[[0,"(true);\n"],[1,"    \n"],[0,"}\n```\n"]],"start1":3396,"start2":3396,"length1":14,"length2":19}]],"length":3415,"saved":false}
+{"ts":1359092344367,"patch":[[{"diffs":[[0,"e);\n    "],[1,"// "],[0,"\n}\n```\n"]],"start1":3400,"start2":3400,"length1":15,"length2":18}]],"length":3418,"saved":false}
+{"ts":1359092347946,"patch":[[{"diffs":[[0,"\n    // "],[1,"Variable"],[0,"\n}\n```\n"]],"start1":3403,"start2":3403,"length1":15,"length2":23}]],"length":3426,"saved":false}
+{"ts":1359092360233,"patch":[[{"diffs":[[0,"Variable"],[1,":"],[0,"\n}\n```\n"]],"start1":3411,"start2":3411,"length1":15,"length2":16}]],"length":3427,"saved":false}
+{"ts":1359092362498,"patch":[[{"diffs":[[0,"ariable:"],[1," "],[0,"\n}\n```\n"]],"start1":3412,"start2":3412,"length1":15,"length2":16}]],"length":3428,"saved":false}
+{"ts":1359092370014,"patch":[[{"diffs":[[0,"riable: "],[1,"N"],[0,"\n}\n```\n"]],"start1":3413,"start2":3413,"length1":15,"length2":16}]],"length":3429,"saved":false}
+{"ts":1359092371080,"patch":[[{"diffs":[[0,"riable: "],[-1,"N"],[1,"n"],[0,"\n}\n```\n"]],"start1":3413,"start2":3413,"length1":16,"length2":16}]],"length":3429,"saved":false}
+{"ts":1359092373197,"patch":[[{"diffs":[[0,"iable: n"],[1,"amed"],[0,"\n}\n```\n"]],"start1":3414,"start2":3414,"length1":15,"length2":19}]],"length":3433,"saved":false}
+{"ts":1359092375791,"patch":[[{"diffs":[[0,"e: named"],[1,"Config"],[0,"\n}\n```\n"]],"start1":3418,"start2":3418,"length1":15,"length2":21}]],"length":3439,"saved":false}
+{"ts":1359092401812,"patch":[[{"diffs":[[0,"riable: "],[1,"$"],[0,"namedCon"]],"start1":3413,"start2":3413,"length1":16,"length2":17}]],"length":3440,"saved":false}
+{"ts":1359092409886,"patch":[[{"diffs":[[0,"nfig();\n"],[1,"\n"],[0,"if ($nam"]],"start1":3328,"start2":3328,"length1":16,"length2":17}]],"length":3441,"saved":false}
+{"ts":1359092412532,"patch":[[{"diffs":[[0,"nfig();\n"],[1,"    "],[0,"\nif ($na"]],"start1":3328,"start2":3328,"length1":16,"length2":20}]],"length":3445,"saved":false}
+{"ts":1359092414372,"patch":[[{"diffs":[[0,"();\n    "],[1,"//"],[0,"\nif ($na"]],"start1":3332,"start2":3332,"length1":16,"length2":18}]],"length":3447,"saved":false}
+{"ts":1359092424686,"patch":[[{"diffs":[[0,";\n    //"],[1," Variable: $namedConfig"],[0,"\nif ($na"]],"start1":3334,"start2":3334,"length1":16,"length2":39}]],"length":3470,"saved":false}
+{"ts":1359092427709,"patch":[[{"diffs":[[0,"dConfig\n"],[1,"    \n"],[0,"if ($nam"]],"start1":3358,"start2":3358,"length1":16,"length2":21}]],"length":3475,"saved":false}
+{"ts":1359092429254,"patch":[[{"diffs":[[0,"fig\n    "],[1,"//"],[0,"\nif ($na"]],"start1":3362,"start2":3362,"length1":16,"length2":18}]],"length":3477,"saved":false}
+{"ts":1359092432736,"patch":[[{"diffs":[[0,"g\n    //"],[1," Function"],[0,"\nif ($na"]],"start1":3364,"start2":3364,"length1":16,"length2":25}]],"length":3486,"saved":false}
+{"ts":1359092434190,"patch":[[{"diffs":[[0,"Function"],[1,": "],[0,"\nif ($na"]],"start1":3373,"start2":3373,"length1":16,"length2":18}]],"length":3488,"saved":false}
+{"ts":1359092443566,"patch":[[{"diffs":[[0,"nction: "],[1,"Router::namedConfig()"],[0,"\nif ($na"]],"start1":3375,"start2":3375,"length1":16,"length2":37}]],"length":3509,"saved":false}
+{"ts":1359092493739,"patch":[[{"diffs":[[0,"/ Variab"],[-1,"le: $namedConfig"],[0,"\n}\n```\n"]],"start1":3478,"start2":3478,"length1":31,"length2":15}]],"length":3493,"saved":false}
+{"ts":1359092495715,"patch":[[{"diffs":[[0,"\n    // "],[-1,"Variab"],[0,"\n}\n```\n"]],"start1":3472,"start2":3472,"length1":21,"length2":15}]],"length":3487,"saved":false}
+{"ts":1359092499372,"patch":[[{"diffs":[[0,"\n    // "],[1,"if "],[0,"\n}\n```\n"]],"start1":3472,"start2":3472,"length1":15,"length2":18}]],"length":3490,"saved":false}
+{"ts":1359092499740,"patch":[[{"diffs":[[0,"  // if "],[1,"s"],[0,"\n}\n```\n"]],"start1":3475,"start2":3475,"length1":15,"length2":16}]],"length":3491,"saved":false}
+{"ts":1359092502393,"patch":[[{"diffs":[[0," // if s"],[1,"tatement\n    "],[0,"\n}\n```\n"]],"start1":3476,"start2":3476,"length1":15,"length2":28}]],"length":3504,"saved":false}
+{"ts":1359092503926,"patch":[[{"diffs":[[0,"ent\n    "],[1,"//"],[0,"\n}\n```\n"]],"start1":3489,"start2":3489,"length1":15,"length2":17}]],"length":3506,"saved":false}
+{"ts":1359092628464,"patch":[[{"diffs":[[0,"t\n    //"],[1,"Condition"],[0,"\n}\n```\n"]],"start1":3491,"start2":3491,"length1":15,"length2":24}]],"length":3515,"saved":false}
+{"ts":1359092630284,"patch":[[{"diffs":[[0,"ondition"],[1,": "],[0,"\n}\n```\n"]],"start1":3500,"start2":3500,"length1":15,"length2":17}]],"length":3517,"saved":false}
+{"ts":1359092639856,"patch":[[{"diffs":[[0,"dition: "],[1,"($namedConfig['rules'] === false)"],[0,"\n}\n```\n"]],"start1":3502,"start2":3502,"length1":15,"length2":48}]],"length":3550,"saved":false}
+{"ts":1359092641139,"patch":[[{"diffs":[[0," false)\n"],[1,"    \n"],[0,"}\n```\n"]],"start1":3536,"start2":3536,"length1":14,"length2":19}]],"length":3555,"saved":false}
+{"ts":1359092642966,"patch":[[{"diffs":[[0,"se)\n    "],[1,"//"],[0,"\n}\n```\n"]],"start1":3540,"start2":3540,"length1":15,"length2":17}]],"length":3557,"saved":false}
+{"ts":1359092647131,"patch":[[{"diffs":[[0,"ement\n    //"],[1," "],[0,"Condition: ("]],"start1":3487,"start2":3487,"length1":24,"length2":25}]],"length":3558,"saved":false}
+{"ts":1359092648990,"patch":[[{"diffs":[[0,")\n    //"],[1," "],[0,"\n}\n```\n"]],"start1":3543,"start2":3543,"length1":15,"length2":16}]],"length":3559,"saved":false}
+{"ts":1359092652319,"patch":[[{"diffs":[[0,"\n    // "],[1,"Statement"],[0,"\n}\n```\n"]],"start1":3544,"start2":3544,"length1":15,"length2":24}]],"length":3568,"saved":false}
+{"ts":1359092653643,"patch":[[{"diffs":[[0,"tatement"],[1,": "],[0,"\n}\n```\n"]],"start1":3553,"start2":3553,"length1":15,"length2":17}]],"length":3570,"saved":false}
+{"ts":1359092677789,"patch":[[{"diffs":[[0,"tement: "],[1,"Router::connectNamed(true)"],[0,"\n}\n```\n"]],"start1":3555,"start2":3555,"length1":15,"length2":41}]],"length":3596,"saved":false}
+{"ts":1359092963039,"patch":[[{"diffs":[[0,"d(true)\n"],[1,"    \n"],[0,"}\n```\n"]],"start1":3582,"start2":3582,"length1":14,"length2":19}]],"length":3601,"saved":false}
+{"ts":1359092988411,"patch":[[{"diffs":[[0,"ue)\n    "],[1,"// "],[0,"\n}\n```\n"]],"start1":3586,"start2":3586,"length1":15,"length2":18}]],"length":3604,"saved":false}
+{"ts":1359093483394,"patch":[[{"diffs":[[0,"\n    // "],[1,"Boolean"],[0,"\n}\n```\n"]],"start1":3589,"start2":3589,"length1":15,"length2":22}]],"length":3611,"saved":false}
+{"ts":1359093641135,"patch":[[{"diffs":[[0," Boolean"],[1,": "],[0,"\n}\n```\n"]],"start1":3596,"start2":3596,"length1":15,"length2":17}]],"length":3613,"saved":false}
+{"ts":1359093642582,"patch":[[{"diffs":[[0,"oolean: "],[1,"true"],[0,"\n}\n```\n"]],"start1":3598,"start2":3598,"length1":15,"length2":19}]],"length":3617,"saved":false}
