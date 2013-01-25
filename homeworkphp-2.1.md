@@ -78,3 +78,25 @@ When you're done editing this file, save it, commit it, and push it to your "ass
 		return $prefix . $key;
 	}
 ```
+
+`rwoodie/cakephp/lib/Config/unicode/casefolding/routes.php`
+```foreach ($prefixes as $prefix) {
+    $params = array('prefix' => $prefix, $prefix => true);
+	$indexParams = $params + array('action' => 'index');
+	Router::connect("/{$prefix}/:controller", $indexParams);
+	Router::connect("/{$prefix}/:controller/:action/*", $params);
+}
+Router::connect('/:controller', array('action' => 'index'));
+Router::connect('/:controller/:action/*');
+
+$namedConfig = Router::namedConfig();
+    // Variable: $namedConfig
+    // Function: Router::namedConfig()
+if ($namedConfig['rules'] === false) {
+	Router::connectNamed(true);
+    // if statement
+    // Condition: ($namedConfig['rules'] === false)
+    // Statement: Router::connectNamed(true)
+    // Boolean: true
+}
+```
