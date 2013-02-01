@@ -43,7 +43,7 @@
 // This is code from another source. I started this on day 2.
 class Start // A class should not be named a verb. Not sure what to call it.
 
-{
+{   // Variable: $name but not sure why he has var in front and he has not defined the variable
     var $name;
     var $type;
     //If construct not set, this is the construct.
@@ -52,7 +52,10 @@ class Start // A class should not be named a verb. Not sure what to call it.
 }
 
 class Band extends Start
-{
+{   // Variable: $name
+    // Variable: $type
+    // Variable: $membersAndInstruments
+    // Assignment operator: =
     var $name;
     var $type;
     var $membersAndInstruments = array();
@@ -60,7 +63,9 @@ class Band extends Start
 
     //Specify starting parameters.
     function __construct($type, $name)
-{
+{   // String: "This"
+    // String: "has just been formed!"
+    // I noticed the strings have double quotes instead of single
     $this->type = $type;
     $this->name = $name;
     echo isset($this->name)
@@ -81,7 +86,8 @@ class Band extends Start
 
 {
     $this->badArray[] = array($instrument => $rejectee);
-}
+}   // Operator sign: =
+    // array
 
     //Show the ones who didn't make it
     function sorryReject($msgStart, $msgEnd)
@@ -140,7 +146,8 @@ class Band extends Start
 
         //var_dump($contestants);
         //var_dump($numOfMembers);
-
+        // This entire line is a statement: $moreMembers = ($numOfMembers[0] > $numOfMembers[1]) ? 0 : 1;
+        // Integer: 0 and 1
         $moreMembers = ($numOfMembers[0] > $numOfMembers[1]) ? 0 : 1; //Set to the index that has more.
         $winner = Randomizer($contestants, $contestants[$moreMembers], $numOfMembers[$moreMembers]);
 
@@ -176,18 +183,18 @@ class Person extends Start{
 
 //Looks for a specified ending letter and cuts it if found and returns.
 function killTheLastLetter($input, $cutThisLetter)
-{
+{   // If statement
     if (substr($input, -2, 2) == "ss")
     {
         return $input;
     }
-    substr($input, -1) == $cutThisLetter
+    substr($input, -1) == $cutThisLetter // Here's an operator sign that means what's on the left is equal to what's on the right
     ? $input = substr($input, 0, -1)
     : $input = $input;
     return $input;
 }
 
-
+    //This is a function 
 function Randomizer($choiceArray, $chanceChoice, $chances = 0)
 
 {
@@ -208,7 +215,9 @@ function Randomizer($choiceArray, $chanceChoice, $chances = 0)
 //====================================================================================================
 $FirstRockBand = new Band("Progressive Rock","Erais");
 
-
+// this is an array 
+// String: Shepard
+// Object: Randomizer
 $bandMembers = array (
     "Bass" => $M1 = new Person("Shepard", Randomizer()),
     "Guitar" => $M2 = new Person("Sy", Randomizer()),
@@ -248,8 +257,10 @@ if (count($FirstRockBand->badArray) > 0){
             );
 
 
-    foreach($FirstRockBand->badArray as $k => $v){
-        foreach($v as $inst => $member){
+    foreach($FirstRockBand->badArray as $k => $v)
+    {
+        foreach($v as $inst => $member)
+        {
             $SecondRockBand->recruitMembers($inst, $member);
         }
 
