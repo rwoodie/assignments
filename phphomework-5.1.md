@@ -9,9 +9,9 @@ if ( !comments_open($comment_post_ID) )
     do_action('comment_closed', $comment_post_ID);
 	wp_die( __('Sorry, comments are closed for this item.') );
 } 
-* If comments are not open, perform the action 'comment closed.
-* also show the message 'Sorry, comments are closed for this item.
-* If comments are open, perform action of pre comment on post
+// If comments are not open, perform the action 'comment closed.
+// also show the message 'Sorry, comments are closed for this item.
+// If comments are open, perform action of pre comment on post
 
 elseif ( 'trash' == $status ) 
 
@@ -19,8 +19,8 @@ elseif ( 'trash' == $status )
 	do_action('comment_on_trash', $comment_post_ID);
 	exit;
 }
-* If trash is equal to your status, do action of comment on trash
-* Exit once done
+// If trash is equal to your status, do action of comment on trash
+// Exit once done
 
 elseif ( !$status_obj->public && !$status_obj->private )
 
@@ -28,8 +28,8 @@ elseif ( !$status_obj->public && !$status_obj->private )
 	do_action('comment_on_draft', $comment_post_ID);
 	exit;
 }
-*If post status is not public and not private, do action of commenting on draft
-* Exit once done
+// If post status is not public and not private, do action of commenting on draft
+// Exit once done
 
 elseif ( post_password_required($comment_post_ID) )
 
@@ -37,12 +37,92 @@ elseif ( post_password_required($comment_post_ID) )
 	do_action('comment_on_password_protected', $comment_post_ID);
 	exit;
 } 
-*If password is required, allow user to post on password protected post
-* Exit once done
+// If password is required, allow user to post on password protected post
+// Exit once done
 
 else 
 
 {
 	do_action('pre_comment_on_post', $comment_post_ID);
 }
+```
+
+```php
+
+/**
+ * trackback_response() - Respond with error or success XML message
+ *
+ * @param int|bool $error Whether there was an error
+ * @param string $error_message Error message if an error occurred
+ */
+function trackback_response($error = 0, $error_message = '') 
+{
+	header('Content-Type: text/xml; charset=' . get_option('blog_charset') );
+	if ($error) 
+    {
+		echo '<?xml version="1.0" encoding="utf-8"?'.">\n";
+		echo "<response>\n";
+		echo "<error>1</error>\n";
+		echo "<message>$error_message</message>\n";
+		echo "</response>";
+		die();
+	} 
+    
+    else 
+    
+    {
+		echo '<?xml version="1.0" encoding="utf-8"?'.">\n";
+		echo "<response>\n";
+		echo "<error>0</error>\n";
+		echo "</response>";
+	}
+}
+// If error, echo lines 63-67
+// Then die
+// Otherwise (else) echo lines 74-77
+
+```
+
+```php
+
+$wp_list_table = _get_list_table('WP_Comments_List_Table');
+$pagenum = $wp_list_table->get_pagenum();
+
+$doaction = $wp_list_table->current_action();
+
+if ( $doaction ) 
+{
+    check_admin_referer( 'bulk-comments' );
+// When doaction is true, execute line 95
+	
+    if ( 'delete_all' == $doaction && !empty( $_REQUEST['pagegen_timestamp'] ) ) 
+// When delete all is equal to doaction and not empty, execute lines 101-104    
+    {
+		$comment_status = $wpdb->escape( $_REQUEST['comment_status'] );
+		$delete_time = $wpdb->escape( $_REQUEST['pagegen_timestamp'] );
+		$comment_ids = $wpdb->get_col( "SELECT comment_ID FROM $wpdb->comments WHERE comment_approved = '$comment_status' AND '$delete_time' > comment_date_gmt" );
+		$doaction = 'delete';
+	} 
+    
+    elseif ( isset( $_REQUEST['delete_comments'] ) ) 
+// When set to delete comments, execute line 110 and 111    
+    {
+		$comment_ids = $_REQUEST['delete_comments'];
+		$doaction = ( $_REQUEST['action'] != -1 ) ? $_REQUEST['action'] : $_REQUEST['action2'];
+	} 
+    
+    elseif ( isset( $_REQUEST['ids'] ) ) 
+// When set to ids, execute line 117   
+    {
+		$comment_ids = array_map( 'absint', explode( ',', $_REQUEST['ids'] ) );
+	} 
+    
+    elseif ( wp_get_referer() ) 
+//Get wp referer 
+//and then exit
+    {
+		wp_safe_redirect( wp_get_referer() );
+		exit;
+    }
+
 ```
