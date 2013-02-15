@@ -126,3 +126,28 @@ if ( $doaction )
     }
 
 ```
+
+```php
+
+// Register core Ajax calls.
+if ( ! empty( $_GET['action'] ) && in_array( $_GET['action'], $core_actions_get ) )
+    add_action( 'wp_ajax_' . $_GET['action'], 'wp_ajax_' . str_replace( '-', '_', $_GET['action'] ), 1 );
+// here is an example of a guard clause. If line 133 is true, execute line 134. If false, die.
+
+if ( ! empty( $_POST['action'] ) && in_array( $_POST['action'], $core_actions_post ) )
+	add_action( 'wp_ajax_' . $_POST['action'], 'wp_ajax_' . str_replace( '-', '_', $_POST['action'] ), 1 );
+// If line 137 is true, execute line 138. If false, die.
+
+add_action( 'wp_ajax_nopriv_autosave', 'wp_ajax_nopriv_autosave', 1 );
+
+if ( is_user_logged_in() )
+	do_action( 'wp_ajax_' . $_REQUEST['action'] ); // Authenticated actions
+// If line 143 is true, execute line 144
+else
+	do_action( 'wp_ajax_nopriv_' . $_REQUEST['action'] ); // Non-admin actions
+// this else statement is related to the if statement on line 143
+
+// Default status
+die( '0' );
+
+```
