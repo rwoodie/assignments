@@ -17,7 +17,9 @@ if ( empty($default) )
 	$default = 'mystery';
 $size = 32;
 $avatar_list = '';
-foreach ( $avatar_defaults as $default_key => $default_name ) {
+foreach ( $avatar_defaults as $default_key => $default_name ) 
+// line 20 is an example of a foreach
+{
 	$selected = ($default == $default_key) ? 'checked="checked" ' : '';
 	$avatar_list .= "\n\t<label><input type='radio' name='avatar_default' id='avatar_{$default_key}' value='" . esc_attr($default_key) . "' {$selected}/> ";
 
@@ -30,3 +32,14 @@ foreach ( $avatar_defaults as $default_key => $default_name ) {
 echo apply_filters('default_avatar_select', $avatar_list);
 ?>
 ```
+
+```php
+$post_fields = array( 'menu-item-db-id', 'menu-item-object-id', 'menu-item-object', 'menu-item-parent-id', 'menu-item-position', 'menu-item-type', 'menu-item-title', 'menu-item-url', 'menu-item-description', 'menu-item-attr-title', 'menu-item-target', 'menu-item-classes', 'menu-item-xfn' );
+    			wp_defer_term_counting(true);
+				// Loop through all the menu items' POST variables
+				if ( ! empty( $_POST['menu-item-db-id'] ) ) {
+					foreach( (array) $_POST['menu-item-db-id'] as $_key => $k )
+                    
+```
+* Line 37 is an example of an array
+* The indexes in the list are strings in line 37. 'menu-item-db-id', 'menu-item-object-id', 'menu-item-object', 'menu-item-parent-id', 'menu-item-position', 'menu-item-type',
