@@ -43,3 +43,57 @@ $post_fields = array( 'menu-item-db-id', 'menu-item-object-id', 'menu-item-objec
 ```
 * Line 37 is an example of an array
 * The indexes in the list are strings in line 37. 'menu-item-db-id', 'menu-item-object-id', 'menu-item-object', 'menu-item-parent-id', 'menu-item-position', 'menu-item-type',
+
+
+```php
+class i18nSchema extends CakeSchema 
+
+{
+
+// @codingStandardsIgnoreEnd
+
+    public $name = 'i18n';
+
+	public function before($event = array()) {
+		return true;
+	}
+
+	public function after($event = array()) {
+	}
+
+	public $i18n = array(
+		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'length' => 10, 'key' => 'primary'),
+		'locale' => array('type' => 'string', 'null' => false, 'length' => 6, 'key' => 'index'),
+		'model' => array('type' => 'string', 'null' => false, 'key' => 'index'),
+		'foreign_key' => array('type' => 'integer', 'null' => false, 'length' => 10, 'key' => 'index'),
+		'field' => array('type' => 'string', 'null' => false, 'key' => 'index'),
+		'content' => array('type' => 'text', 'null' => true, 'default' => null),
+		'indexes' => array('PRIMARY' => array('column' => 'id', 'unique' => 1), 'locale' => array('column' => 'locale', 'unique' => 0), 'model' => array('column' => 'model', 'unique' => 0), 'row_id' => array('column' => 'foreign_key', 'unique' => 0), 'field' => array('column' => 'field', 'unique' => 0))
+	);
+
+}
+// this is an example of an arry
+line 65 - 71 are indexes in the list. The indexes are strings as they have been identified as single quotes.
+```
+
+```php
+Configure::write('Dispatcher.filters', array(
+    'AssetDispatcher',
+    'CacheDispatcher'
+)); // Here's an array that is using strings in the list
+
+/**
+ * Configures default file logging options
+ */
+App::uses('CakeLog', 'Log');
+CakeLog::config('debug', array(
+	'engine' => 'FileLog',
+	'types' => array('notice', 'info', 'debug'),
+	'file' => 'debug',
+)); // Another array that is using strings in the list
+CakeLog::config('error', array(
+	'engine' => 'FileLog',
+	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
+	'file' => 'error',
+));
+```
