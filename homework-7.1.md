@@ -15,7 +15,7 @@ function twentyeleven_excerpt_length( $length )
 * The argument is $length
 * The scope is line 10-12 on this page and line 35-37 in the original file
 * The return function is line 11 on this page and line 336 in the original file
-* The doc block is lines 329-334 and defines what the function will do
+* The doc block for the function is lines 329-334 and defines what the function will do
 
 /wp-content/themes/twentyeleven/functions.php:53-209
 ```php
@@ -77,7 +77,7 @@ function twentyeleven_setup()
 
 ```php
 
-* The doc block is lines 53-72 in the original file
+* The doc block for the function is lines 53-72 in the original file
 * We have some params in the doc block with lines 63-69 that defines the functions
 * Lines 73 - 209 in the original file is the scope. I did not copy all of the lines
 * Line 73 in the original file is a function and the name of the function is twentyeleven_setup
@@ -85,3 +85,71 @@ function twentyeleven_setup()
 * $default_background_color is a variable inside the scope - Line 102 in the original file
 
 
+/wp-content/themes/twentyeleven/functions.php: 474-505
+```php
+/**
+ * Count the number of footer sidebars to enable dynamic classes for the footer
+ */
+function twentyeleven_footer_sidebar_class() 
+{
+    $count = 0;
+
+	if ( is_active_sidebar( 'sidebar-3' ) )
+		$count++;
+
+	if ( is_active_sidebar( 'sidebar-4' ) )
+		$count++;
+
+	if ( is_active_sidebar( 'sidebar-5' ) )
+		$count++;
+
+	$class = '';
+
+	switch ( $count ) 
+    {
+		case '1':
+			$class = 'one';
+			break;
+		case '2':
+			$class = 'two';
+			break;
+		case '3':
+			$class = 'three';
+			break;
+	}
+
+	if ( $class )
+		echo 'class="' . $class . '"';
+}
+```
+* The doc block for the function is between lines 474-476
+* The name of the function is twentyeleven_footer_sidebar_class
+* The scope of the function exists between 477-505
+* The variable inside of the scope is $count
+* I did not see any arguments for this function
+* I did not see where the variable was used elsewhere in the code
+
+/wp-content/themes/twentyeleven/functions.php: 596-612
+/**
+ * Adds two classes to the array of body classes.
+ * The first is if the site has only had one author with published posts.
+ * The second is if a singular post being displayed
+ *
+ * @since Twenty Eleven 1.0
+ */
+function twentyeleven_body_classes( $classes ) 
+{
+
+    if ( function_exists( 'is_multi_author' ) && ! is_multi_author() )
+		$classes[] = 'single-author';
+
+	if ( is_singular() && ! is_home() && ! is_page_template( 'showcase.php' ) && ! is_page_template( 'sidebar-page.php' ) )
+		$classes[] = 'singular';
+
+	return $classes;
+}
+* The doc block for the funtion is on lines 596-602
+* The param is @since Twenty Eleven 1.0
+* The name of the function is twentyeleven_body_classes
+* The argument is the variable $classes
+* The return is on line 611 with return $classes
