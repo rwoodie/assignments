@@ -153,3 +153,68 @@ function twentyeleven_body_classes( $classes )
 * The name of the function is twentyeleven_body_classes
 * The argument is the variable $classes
 * The return is on line 611 with return $classes
+
+cakephp/lib/Cake/TestSuite/CakeTestRunner.php: 82-103
+```php
+// @codingStandardsIgnoreEnd
+
+/**
+ * Get the fixture manager class specified or use the default one.
+ *
+ * @return instance of a fixture manager.
+ * @throws RuntimeException When fixture manager class cannot be loaded.
+ */
+    protected function _getFixtureManager($arguments) {
+		if (isset($arguments['fixtureManager'])) {
+			App::uses($arguments['fixtureManager'], 'TestSuite');
+			if (class_exists($arguments['fixtureManager'])) {
+				return new $arguments['fixtureManager'];
+			}
+			throw new RuntimeException(__d('cake_dev', 'Could not find fixture manager %s.', $arguments['fixtureManager']));
+		}
+		App::uses('AppFixtureManager', 'TestSuite');
+		if (class_exists('AppFixtureManager')) {
+			return new AppFixtureManager();
+		}
+		return new CakeFixtureManager();
+	}
+```
+* The doc block for this function is 84-89
+* Two params on lines 87 & 88
+* Function name is _getFixtureManager
+* The argument name is: $arguments
+* The scope of the function is lines 90 - 104
+* We have a new exception being thrown on line 97
+* Found three returns: lines 95, 101, and 103
+* The RuntimeException was included to execute when fixture manager class cannot be loaded
+* I did not find where the function is invoked anywhere else
+
+cakephp/lib/Cake/TestSuite/CakeTestRunner.php: 64-81
+```php
+// @codingStandardsIgnoreStart PHPUnit overrides don't match CakePHP
+/**
+ * Create the test result and splice on our code coverage reports.
+ *
+ * @return PHPUnit_Framework_TestResult
+ */
+    protected function createTestResult() 
+    {
+		$result = new PHPUnit_Framework_TestResult;
+		if (!empty($this->_params['codeCoverage'])) {
+			if (method_exists($result, 'collectCodeCoverageInformation')) {
+				$result->collectCodeCoverageInformation(true);
+			}
+			if (method_exists($result, 'setCodeCoverage')) {
+				$result->setCodeCoverage(new PHP_CodeCoverage());
+			}
+		}
+		return $result;
+	}
+```
+* The doc block for this function is 64-69
+* The name of the function is createTestResult
+* There are no arguments for this function 
+* There is a variable $result inside the scope of the function
+* I did not see where the variable $result is used again in this file, but it is used in other files:  lib/Cake/TestSuite/CakeTestCase.php: 78
+* PHP will not look outside the scope of the function if the variable is used for a different value
+* 1 return on line 80
