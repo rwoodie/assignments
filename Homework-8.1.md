@@ -81,3 +81,52 @@ class WP_Feed_Cache_Transient {
 * Public properties: var $name, var $mod_name, var $lifetime
 * Method: __construct
 * arguments: $location, $filename, $extension
+
+
+`src/wordpress/wp-includes/class-wp-editor.php:11-28`
+```php
+final class _WP_Editors {
+    public static $mce_locale;
+
+	private static $mce_settings = array();
+	private static $qt_settings = array();
+	private static $plugins = array();
+	private static $qt_buttons = array();
+	private static $ext_plugins;
+	private static $baseurl;
+	private static $first_init;
+	private static $this_tinymce = false;
+	private static $this_quicktags = false;
+	private static $has_tinymce = false;
+	private static $has_quicktags = false;
+	private static $has_medialib = false;
+	private static $editor_buttons_css = true;
+
+	private function __construct() {}
+```
+* Class name: _WP_Editors 
+* Public property: $mce_locale
+* Private properties: Line 14-26
+* Method: __construct
+* There are no arguments associated with the "__construct" method
+
+
+`src/wordpress/wp-includes/class-wp-editor.php:154-166`
+```php
+    public static function editor_settings($editor_id, $set) {
+		global $editor_styles;
+		$first_run = false;
+
+		if ( empty(self::$first_init) ) {
+			if ( is_admin() ) {
+				add_action( 'admin_print_footer_scripts', array( __CLASS__, 'editor_js'), 50 );
+				add_action( 'admin_footer', array( __CLASS__, 'enqueue_scripts'), 1 );
+			} else {
+				add_action( 'wp_print_footer_scripts', array( __CLASS__, 'editor_js'), 50 );
+				add_action( 'wp_footer', array( __CLASS__, 'enqueue_scripts'), 1 );
+			}
+		}
+```
+* Method: editor_settings
+* Arguments: $editor_id, $set
+* Public property: I think $first_run is a public property as it is not labeled private or protected
