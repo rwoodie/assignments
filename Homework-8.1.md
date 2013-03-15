@@ -130,3 +130,78 @@ final class _WP_Editors {
 * Method: editor_settings
 * Arguments: $editor_id, $set
 * Public property: I think $first_run is a public property as it is not labeled private or protected
+
+`src/wordpress/wp-includes/class-wp-embed.php:9-33`
+```php
+class WP_Embed {
+    var $handlers = array();
+	var $post_ID;
+	var $usecache = true;
+	var $linkifunknown = true;
+
+	/**
+	 * Constructor
+	 */
+	function __construct() {
+		// Hack to get the [embed] shortcode to run before wpautop()
+		add_filter( 'the_content', array( $this, 'run_shortcode' ), 8 );
+
+		// Shortcode placeholder for strip_shortcodes()
+		add_shortcode( 'embed', '__return_false' );
+
+		// Attempts to embed all URLs in a post
+		add_filter( 'the_content', array( $this, 'autoembed' ), 8 );
+
+		// When a post is saved, invalidate the oEmbed cache
+		add_action( 'pre_post_update', array( $this, 'delete_oembed_caches' ) );
+
+		// After a post is saved, cache oEmbed items via AJAX
+		add_action( 'edit_form_advanced', array( $this, 'maybe_run_ajax_cache' ) );
+	}
+```
+* Class name: WP_Embed
+* Public properties: var $handlers, var $post_ID, var $usecache, var $linkifunknown
+* Method: __construct
+* No arguments associated with this method
+
+
+`src/wordpress/wp-admin/includes/class-pclzip.php:190-222`
+```php
+  class PclZip
+  {
+    // ----- Filename of the zip file
+    var $zipname = '';
+
+    // ----- File descriptor of the zip file
+    var $zip_fd = 0;
+
+    // ----- Internal error handling
+    var $error_code = 1;
+    var $error_string = '';
+
+    // ----- Current status of the magic_quotes_runtime
+    // This value store the php configuration for magic_quotes
+    // The class can then disable the magic_quotes and reset it after
+    var $magic_quotes_status;
+
+  // --------------------------------------------------------------------------------
+  // Function : PclZip()
+  // Description :
+  //   Creates a PclZip object and set the name of the associated Zip archive
+  //   filename.
+  //   Note that no real action is taken, if the archive does not exist it is not
+  //   created. Use create() for that.
+  // --------------------------------------------------------------------------------
+  function PclZip($p_zipname)
+  {
+
+    // ----- Tests the zlib
+    if (!function_exists('gzopen'))
+    {
+      die('Abort '.basename(__FILE__).' : Missing zlib extensions');
+    }
+```
+* Class name: PclZip
+* Public property: $zipname, $zip_fd, $error_code, $error_string
+* Method: PclZip
+* Argument: $p_zipname
