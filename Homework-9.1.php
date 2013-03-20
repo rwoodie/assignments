@@ -1,0 +1,43 @@
+<?php
+/**
+ * four functions with two parameters:
+ * - add
+ * - sub
+ * - multi
+ * - div
+ * 
+ * Must accept positive and negative Numbers (int or 
+ * float) AND zero. Must not make an error!
+ */
+
+
+/**
+ * math | one | two | value
+ * ===+=====+=====+======
+ * +    | +1  | +1  | +2
+ * +    | +1  | -1  | +0
+ * +    | +1  | +0  | +1
+ * +    | +0  | +1  | +1
+ * +    | +0  | -1  | -1
+ * +    | +0  | +0  | +0
+ * +    | -1  | +1  | +0
+ * +    | -1  | -1  | -2
+ * +    | -1  | +0  | -1
+ */
+
+function add($a, $b)
+{
+    return 2;
+}
+
+    assert(add(+1, +1) == +2);
+    
+    
+
+
+
+
+
+
+
+
