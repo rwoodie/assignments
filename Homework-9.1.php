@@ -1,10 +1,10 @@
 <?php
 /**
  * four functions with two parameters:
- * - add
- * - sub
- * - multi
- * - div
+ * - addition
+ * - subtraction
+ * - multiplication
+ * - division
  * 
  * Must accept positive and negative Numbers (int or 
  * float) AND zero. Must not make an error!
@@ -64,5 +64,13 @@ function subtract($a, $b)
 }
 
     assert(subtract(+1, +1) == +0);
+    assert(subtract(+1, -1) == +2);
+    assert(subtract(+1, +0) == +1);
+    assert(subtract(+0, +1) == -1);
+    assert(subtract(+0, -1) == +1);
+    assert(subtract(+0, +0) == +0);
+    assert(subtract(-1, +1) == -2);
+    assert(subtract(-1, -1) == +0);
+    assert(subtract(-1, +0) == -1);
     
     
