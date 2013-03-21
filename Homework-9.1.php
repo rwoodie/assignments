@@ -30,6 +30,7 @@ function add($a, $b)
     return $a + $b;
 }
 
+{
     assert(add(+1, +1) == +2);
     assert(add(+1, -1) == +0);
     assert(add(+1, +0) == +1);
@@ -39,4 +40,4 @@ function add($a, $b)
     assert(add(-1, +1) == +0);
     assert(add(-1, -1) == -2);
     assert(add(-1, +0) == -1);
-    
+}
