@@ -89,12 +89,24 @@ function subtract($a, $b)
  * x    | -1  | +0  | +0
  */
  
+//This is for multiplication function
 function multiply($a, $b)
 {
     return $a * $b;
 }
 
+{
     assert(multiply(+1, +1) == +1);
+    assert(multiply(+1, -1) == -1);
+    assert(multiply(+1, +0) == +0);
+    assert(multiply(+0, +1) == +0);
+    assert(multiply(+0, -1) == +0);
+    assert(multiply(+0, +0) == +0);
+    assert(multiply(-1, +1) == -1);
+    assert(multiply(-1, -1) == +1);
+    assert(multiply(-1, +0) == +0);
+}
+
     
     
     
