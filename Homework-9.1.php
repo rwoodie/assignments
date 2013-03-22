@@ -107,6 +107,27 @@ function multiply($a, $b)
     assert(multiply(-1, +0) == +0);
 }
 
+/**
+ * math | one | two | value
+ * ===+=====+=====+======
+ * /    | +1  | +1  | +1
+ * /    | +1  | -1  | -1
+ * /    | +1  | +0  | +0
+ * /    | +0  | +1  | +0
+ * /    | +0  | -1  | +0
+ * /    | +0  | +0  | +0
+ * /    | -1  | +1  | -1
+ * /    | -1  | -1  | +1
+ * /    | -1  | +0  | +0
+ */
+ 
+//This is for multiplication function
+function divide($a, $b)
+{
+    return $a / $b;
+}
+
+    assert(divide(+1, +1) == +1);
     
     
     
