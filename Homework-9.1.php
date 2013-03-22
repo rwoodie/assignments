@@ -127,7 +127,17 @@ function divide($a, $b)
     return $a / $b;
 }
 
+{
     assert(divide(+1, +1) == +1);
-    
+    assert(divide(+1, -1) == -1);
+//  assert(divide(+1, +0) == +0); causes an error
+    assert(divide(+0, +1) == +0);
+    assert(divide(+0, -1) == +0);
+//  assert(divide(+0, +0) == +0); causes an error
+    assert(divide(-1, +1) == -1);
+    assert(divide(-1, -1) == +1);
+//  assert(divide(-1, +0) == +0); causes an error
+}
+
     
     
