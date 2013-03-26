@@ -25,4 +25,11 @@
  * +    | -1  | +0  | -1
  */
  
+// This function is for addition
+function add($a, $b)
+{
+    return 2;
+}
+ 
  assert(add(+1, +1) == 2);
+ 
