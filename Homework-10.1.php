@@ -31,5 +31,6 @@ function add($a, $b)
     return 2;
 }
  
- assert(add(+1, +1) == 2);
+ assert(add(+1, +1) == +2);
+ assert(add(+1, +1) == +0);
  
