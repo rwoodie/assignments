@@ -60,4 +60,4 @@ function divide($a, $b)
 }
     
     assert(divide(+1, +1) == +1);
-
+    assert(divide(+1, -1) == -1);
