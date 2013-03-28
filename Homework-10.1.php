@@ -56,7 +56,7 @@ function multiply($a, $b)
  
 function divide($a, $b)
 {
-    return +1;
+    return $a / $b;
 }
     
     assert(divide(+1, +1) == +1);
