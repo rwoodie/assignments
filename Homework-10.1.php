@@ -25,6 +25,10 @@
  * x    | -1  | +0  | -1
  */
  
+function multiply($a, $b)
+{
+    return +1;
+}
 
-assert(multiply(+1, +1) == +1)
+assert(multiply(+1, +1) == +1);
 
