@@ -25,6 +25,7 @@
  * x    | -1  | +0  | +0
  */
  
+// A test for multiplication
 function multiply($a, $b)
 {
     return $a * $b;
@@ -53,7 +54,8 @@ function multiply($a, $b)
  * /    | -1  | -1  | +1
  * /    | -1  | +0  | +0
  */
- 
+
+//A test for division
 function divide($a, $b)
 {
     return $a / $b;
@@ -61,3 +63,5 @@ function divide($a, $b)
     
     assert(divide(+1, +1) == +1);
     assert(divide(+1, -1) == -1);
+    assert(divide(+1, +0) == +0);
+   
