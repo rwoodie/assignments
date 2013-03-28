@@ -56,12 +56,18 @@ function multiply($a, $b)
  */
 
 //A test for division
-function divide($a, $b)
+function divide($a, $b) 
 {
-    return $a / $b;
+       if ($a == 0 || $b == 0)
+       {
+       var_dump('not divisible by zero');
+       }  
+     
+       return ($a / $b);
+           
 }
     
     assert(divide(+1, +1) == +1);
     assert(divide(+1, -1) == -1);
     assert(divide(+1, +0) == +0);
-   
+    
