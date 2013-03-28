@@ -32,4 +32,11 @@ function multiply($a, $b)
 
     assert(multiply(+1, +1) == +1);
     assert(multiply(+1, -1) == -1);
+    assert(multiply(+1, +0) == +0);
+    assert(multiply(+0, +1) == +0);
+    assert(multiply(+0, -1) == +0);
+    assert(multiply(+0, +0) == +0);
+    assert(multiply(-1, +1) == -1);
+    assert(multiply(-1, -1) == +1);
+    assert(multiply(-1, +0) == +0);
 
