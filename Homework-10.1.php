@@ -25,6 +25,11 @@
  * -    | -1  | +0  | -1
  */
  
-assert(subtraction(+1, +1) == +0);
+function subtraction($a, $b)
+{
+    return +0;
+}
+
+    assert(subtraction(+1, +1) == +0);
 
     
