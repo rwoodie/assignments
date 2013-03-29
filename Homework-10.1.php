@@ -10,6 +10,18 @@
  * float) AND zero. Must not make an error!
  */
 
+$inputs = array(
+    array(+1, +1),
+    array(+1, -1),
+    array(+1, +0),
+    array(+0, +1),
+    array(+0, -1),
+    array(+0, +0),
+    array(-1, +1),
+    array(-1, -1),
+    array(-1, +0),
+   
+);
 
 /**
  * math | one | two | value
@@ -30,12 +42,24 @@ function subtraction($a, $b)
     return $a - $b;
 }
 
-    assert(subtraction(+1, +1) == +0);
-    assert(subtraction(+1, -1) == +2);
-    assert(subtraction(+1, +0) == +1);
-    assert(subtraction(+0, +1) == -1);
-    assert(subtraction(+0, -1) == +1);
-    assert(subtraction(+0, +0) == +0);
-    assert(subtraction(-1, +1) == -2);
-    assert(subtraction(-1, -1) == +0);
-    assert(subtraction(-1, +0) == -1);
+{
+$outputs = array(
+        +0,
+        +2,
+        +1,
+        -1,
+        +1,
+        +0,
+        -2,
+        +0,
+        -1,
+    );
+
+ foreach ($inputs as $index => $input)
+    {
+        assert(subtraction($input[0], $input[1]) == @$outputs[$index]);
+    }
+
+}    
+
+   
