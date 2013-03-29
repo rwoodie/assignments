@@ -27,7 +27,7 @@
  
 function subtraction($a, $b)
 {
-    return +0;
+    return $a - $b;
 }
 
     assert(subtraction(+1, +1) == +0);
