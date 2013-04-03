@@ -8,7 +8,7 @@ $a = 1;
  * 
  * And if I put line breaks, C9 helps me out.
  */
-{
+{// Comment on my code...
     var_dump($a); // int(1)
     var_dump($a == 42); // bool(false)
     var_dump($a == true); // bool(true)

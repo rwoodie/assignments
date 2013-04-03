@@ -25,6 +25,7 @@
  * +    | -1  | +0  | -1
  */
 
+
 // This function is for addition
 function add($a, $b)
 {   
