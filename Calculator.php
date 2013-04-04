@@ -43,4 +43,9 @@ function addition($a, $b)
  * +    | -1  | +0  | -1
  */
  
+function subtraction($a, $b)
+{
+    return +0;
+}
+
  
