@@ -13,5 +13,10 @@ include ("Calculator.php");
     assert(addition(-1, +1) == +0);
     assert(addition(-1, -1) == -2);
     assert(addition(-1, +0) == -1);
-}    
+}
+
+{
+    //This is a test for subtraction
+    assert(subtraction(+1, +1) == +0);
+}
     
