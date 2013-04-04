@@ -45,7 +45,7 @@ function addition($a, $b)
  
 function subtraction($a, $b)
 {
-    return +0;
+    return $a - $b;
 }
 
  
