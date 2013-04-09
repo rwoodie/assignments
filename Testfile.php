@@ -13,6 +13,7 @@ include ("Calculator.php");
     assert(addition(-1, +0) == -1);
 }
 
+{//Testing for multiplication
     assert(multiplication(+1, +1) == +1);
     assert(multiplication(+1, -1) == -1);
     assert(multiplication(+1, +0) == +0);
@@ -22,5 +23,5 @@ include ("Calculator.php");
     assert(multiplication(-1, +1) == -1);
     assert(multiplication(-1, -1) == +1);
     assert(multiplication(-1, +0) == +0);
-
+}
     
