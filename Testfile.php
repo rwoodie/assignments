@@ -15,6 +15,12 @@ include ("Calculator.php");
 
     assert(multiplication(+1, +1) == +1);
     assert(multiplication(+1, -1) == -1);
-
+    assert(multiplication(+1, +0) == +0);
+    assert(multiplication(+0, +1) == +0);
+    assert(multiplication(+0, -1) == +0);
+    assert(multiplication(+0, +0) == +0);
+    assert(multiplication(-1, +1) == -1);
+    assert(multiplication(-1, -1) == +1);
+    assert(multiplication(-1, +0) == +0);
 
     
