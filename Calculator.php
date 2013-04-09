@@ -45,6 +45,7 @@ function addition($a, $b)
 
 function multiplication($a, $b)
 {
-    return +1;
+    return $a * $b;
 }
+
  
