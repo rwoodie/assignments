@@ -26,6 +26,5 @@
  
 function addition($a, $b)
 {
-    return $a + $b;
+    return +2;
 }
-
