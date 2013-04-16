@@ -20,5 +20,6 @@
 
 function createHall($size)
 {
-    return 'xxxxxxxxxx';
+    return '0000000000';
 }
+
