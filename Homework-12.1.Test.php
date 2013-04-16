@@ -2,18 +2,16 @@
 require 'Homework-12.1.Code.php';
 
 // test: can we make a hallway with 10 doors?
-assert(strlen(createHall(10)) === 10);
-
 // test: hallway match expected: '0000000000'
-// call: pass1() on hallway
+
+assert(strlen(createHall(10)) === 10);
 assert(createHall(10) === '0000000000');
 
+// call: pass1() on hallway
 // test: hallway match expected: '1111111111'
-
+assert(createHall(10) === '1111111111');
 
 // call: pass2() on hallway
-
-
 // test: hallway match expected: '1010101010'
 
 
