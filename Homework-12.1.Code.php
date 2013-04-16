@@ -23,4 +23,8 @@ function createHall($size)
     return '0000000000';
 }
 
-
+//ake a walk down the hallway, change the state of the doors
+function pass1(createHall(10))
+{
+    return '1111111111';
+}
