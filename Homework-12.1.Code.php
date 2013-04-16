@@ -18,7 +18,3 @@
  * @return string of length $size of '0'
  */
 
-function createHall($size)
-{
-    return '0000000000';
-}

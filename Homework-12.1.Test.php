@@ -5,8 +5,6 @@ require 'Homework-12.1.Code.php';
 assert(strlen(createHall(10)) === 10);
 
 // test: hallway match expected: '0000000000'
-
-
 // call: pass1() on hallway
 
 
