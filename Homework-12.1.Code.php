@@ -18,13 +18,20 @@
  * @return string of length $size of '0'
  */
 
+//A Hallway has 10 closed doors
 function createHall($size)
 {
     return '0000000000';
 }
 
-//Take a walk down the hallway, change the state of the doors
+//Take a walk down the hallway. Stop at every door and open it.
 function pass1($hallway)
 {
     return '1111111111';
+}
+
+//Take a walk down the hallway. Stop at every _other_ door and close it.
+function pass2($hallway)
+{
+    return '1010101010';
 }
