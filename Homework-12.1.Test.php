@@ -3,6 +3,7 @@ require 'Homework-12.1.Code.php';
 
 // test: can we make a hallway with 10 doors?
 // test: hallway match expected: '0000000000'
+$hallway = createHall(10);
 assert(strlen($hallway) === 10);
 
 // call: pass1() on hallway

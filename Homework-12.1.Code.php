@@ -19,10 +19,8 @@
  */
 
 //A Hallway has 10 closed doors
+function createHall($size)
+{
+    return 'xxxxxxxxxx';
+}
 
-
-//Take a walk down the hallway. Stop at every door and open it.
-
-
-
-//Take a walk down the hallway. Stop at every _other_ door and close it.
