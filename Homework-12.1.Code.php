@@ -37,9 +37,10 @@ function pass2($hallway)
 }
 
 //Take a walk down the hallway for pass 3. Stop at every _third_ door - If open, close it. If closed, open it.
-function pass($hallway)
+function pass3($hallway)
 {
     return '1000111000';
 }
+
 
 
