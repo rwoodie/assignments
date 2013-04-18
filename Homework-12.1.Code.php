@@ -21,6 +21,6 @@
 //A Hallway has 10 closed doors
 function createHall($size)
 {
-    return 'xxxxxxxxxx';
+    return '0000000000';
 }
 
