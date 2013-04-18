@@ -8,6 +8,7 @@ assert(strlen($hallway) === 10);
 assert($hallway === '0000000000');
 
 // call: pass1() on hallway
+$hallway = pass1($hallway);
 // test: hallway match expected: '1111111111'
 assert($hallway === '1111111111');
 
