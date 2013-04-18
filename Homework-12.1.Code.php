@@ -30,3 +30,8 @@ function pass1($hallway)
     return '1111111111';
 }
 
+//Take a walk down the hallway for pass 2. Stop at every _other_ door and close it.
+function pass2($hallway)
+{
+    return '1010101010';
+}
