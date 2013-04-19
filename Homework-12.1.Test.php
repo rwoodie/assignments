@@ -9,7 +9,7 @@ assert(createHall(10) === '0000000000');
 
 // call: pass1() on hallway
 // test: hallway match expected: '1111111111'
-
+assert($hallway === '1111111111'); 
 
 // call: pass2() on hallway
 // test: hallway match expected: '1010101010'
