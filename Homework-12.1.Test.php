@@ -19,8 +19,9 @@ assert($hallway === '1010101010');
 
 
 // call: pass3() on hallway
+$hallway = pass3($hallway);
 // test: hallway match expected: '1000111000'
-
+assert($hallway === '1000111000');
 
 
 // call: pass4() on hallway
