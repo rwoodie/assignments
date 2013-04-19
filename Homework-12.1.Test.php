@@ -25,6 +25,8 @@ assert($hallway === '1000111000');
 
 
 // call: pass4() on hallway
+$hallway = pass4($hallway);
 // test: hallway match expected: '1001111100'
+assert($hallway === '1001111100');
 
 // test: can we make a hallway with 100 doors?
