@@ -19,7 +19,10 @@
  */
 
 //A Hallway has 10 closed doors
-
+function createHall($size)
+{
+    return '0000000000';
+}
 
 
 
