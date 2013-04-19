@@ -24,6 +24,11 @@ function createHall($size)
     return '0000000000';
 }
 
+//Take a walk down the hallway - Pass 1. Stop at every door and open it.
+function pass1($hallway) 
+{
+    return '1111111111';
+}
 
 
 
