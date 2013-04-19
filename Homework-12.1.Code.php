@@ -19,28 +19,8 @@
  */
 
 //A Hallway has 10 closed doors
-function createHall($size)
-{
-    return '0000000000';
-}
 
-//Take a walk down the hallway for pass 1. Stop at every door and open it.
-function pass1($hallway)
-{
-    return '1111111111';
-}
 
-//Take a walk down the hallway for pass 2. Stop at every _other_ door and close it.
-function pass2($hallway)
-{
-    return '1010101010';
-}
-
-//Take a walk down the hallway for pass 3. Stop at every _third_ door - If open, close it. If closed, open it.
-function pass3($hallway)
-{
-    return '1000111000';
-}
 
 
 
