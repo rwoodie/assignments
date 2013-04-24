@@ -8,8 +8,10 @@ assert(hallway(1)  == '0');
 
 
 // test: porter('1') == '0'
+assert(porter('1') == '0');
 
 // test: porter('0') == '1'
+
 
 // test: firstPass(hallway(10)) == '1111111111'
 
