@@ -12,7 +12,10 @@
  */
 
 // a Hallway: string of '1' or '0' with length = number of doors ($N)
-
+function hallway($n)
+{
+    return str_pad($input = '', $pad_length = $n, $pad_string = '0');
+}
 
 // open or close a door: function(string '1' or '0'): string '1' or '0', next state of door
 
