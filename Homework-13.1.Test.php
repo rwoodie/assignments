@@ -3,12 +3,10 @@ require 'Homework-13.1.Code.php';
 
 // test: hallway(10) == '0000000000'
 assert(hallway(10) == '0000000000');
-assert(hallway(1)  == '0');
-
 
 
 // test: porter('1') == '0'
-assert(porter('1') == '0'); 
+
 
 // test: porter('0') == '1'
 
