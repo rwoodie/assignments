@@ -12,29 +12,15 @@
  */
 
 // a Hallway: string of '1' or '0' with length = number of doors ($N)
-function hallway($n)
-{
-    return str_pad($input = '', $pad_length = $n, $pad_string = '0');
-}
+
 
 
 
 // open or close a door: function(string '1' or '0'): string '1' or '0', next state of door
-function porter($door)
-{
-    if($door == '1')
-    {
-        return '0';
-    }
-        return '1';
-}
 
 
 // first pass: function(string $hallway): a new Hallway, 1st state of hallway
-function firstPass($hallway)
-{
-    return str_pad($input = '', strlen($hallway), $pad_stringd = '1');
-}
+
 
 
 // second pass: function(string $hallway): a new Hallway, 2nd state of hallway
