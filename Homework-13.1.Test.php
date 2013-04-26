@@ -19,6 +19,7 @@ assert(firstPass(hallway(10)) == '1111111111');
 
 
 // test: secondPass(hallway(10)) == '1010101010'
+assert(secondPass('0000000000') == '1010101010');
 
 
 
