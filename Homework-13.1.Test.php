@@ -5,6 +5,7 @@ require 'Homework-13.1.Code.php';
 assert(hallway(10) == '0000000000');
 
 // test: porter('1') == '0'
+assert(porter('1') == '0');
 
 
 
