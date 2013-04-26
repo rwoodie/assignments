@@ -14,6 +14,7 @@ assert(porter('0') == '1');
 
 
 // test: firstPass(hallway(10)) == '1111111111'
+assert(firstPass(hallway(10)) == '1111111111');
 
 
 
