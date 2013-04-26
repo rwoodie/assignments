@@ -18,7 +18,8 @@ assert(porter('0') == '1');
 assert(firstPass(hallway(10)) == '1111111111');
 
 
-// test: secondPass(hallway(10)) == '0101010101'
+// test: secondPass(hallway(10)) == '1010101010'
+assert(secondPass('0000000000') == '1010101010')
 
 
 // test: thirdPass(hallway(10)) == '0010010010'
