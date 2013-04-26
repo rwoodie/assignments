@@ -33,6 +33,7 @@ function porter($door)
 // first pass: function(string $hallway): a new Hallway, 1st state of hallway
 
 
+
 // second pass: function(string $hallway): a new Hallway, 2nd state of hallway
 
 
