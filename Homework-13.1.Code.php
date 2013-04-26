@@ -31,7 +31,10 @@ function porter($door)
 
 
 // first pass: function(string $hallway): a new Hallway, 1st state of hallway
-
+function firstPass($hallway)
+{
+    return str_pad($input = '', strlen($hallway), $pad_stringd = '1');
+}
 
 
 // second pass: function(string $hallway): a new Hallway, 2nd state of hallway
