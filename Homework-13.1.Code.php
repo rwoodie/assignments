@@ -26,6 +26,7 @@ function porter($door)
     {
         return '0';
     }
+        return '1';
 }
 
 
